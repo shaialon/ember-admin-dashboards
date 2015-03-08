@@ -110,7 +110,7 @@ export default Ember.Component.extend({
             animation: google.maps.Animation.DROP,
             title: '@' + tweet.user.screen_name + ': ' + tweet.text,
             icon: {
-              url: tweet.user.profile_image_url,
+              url: tweet.user.profile_image_url.slice(5),
               size: new google.maps.Size(32, 32),
               origin: new google.maps.Point(0, 0),
               anchor: new google.maps.Point(16, 16),
