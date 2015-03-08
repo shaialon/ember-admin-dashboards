@@ -1,0 +1,23 @@
+{{#box-widget
+      title = "Latest Members"
+      colorSceme= "danger"
+      closable = false
+      collapsable = true
+      label = "8 New Members"
+      bodyClass= "no-padding"
+      footer= "dashboard/new-users-box-footer"
+      footerClass = "text-center"
+    }}
+    <ul class="users-list clearfix">
+      {{#each member in newMembersArr}}
+        <li>
+          <img {{bind-attr src="member.imgUrl"}} alt="User Image"/>
+          <a class="users-list-name" href="#">{{member.name}}</a>
+          <span class="users-list-date">{{member.signUpDate}}</span>
+        </li>
+      {{/each}}
+    </ul><!-- /.users-list -->
+{{/box-widget}}
+
+
+

@@ -1,0 +1,130 @@
+<!-- Widgets as boxes -->
+<h4 class="page-header">
+  AdminLTE Boxes
+  <small>We use the base class <code>.box</code> to create widgets simply.</small>
+</h4>
+<div class="row">
+  <div class="col-md-4">
+    <!-- Default box -->
+    {{#box-widget
+      title = "Default Box (button tooltip)"
+      footer= "widgets/generic-box-footer"
+      closable = true
+    }}
+      Box class: <code>.box</code>
+      <p>
+        amber, microbrewery abbey hydrometer, brewpub ale lauter tun saccharification oxidized barrel.
+        berliner weisse wort chiller adjunct hydrometer alcohol aau!
+        sour/acidic sour/acidic chocolate malt ipa ipa hydrometer.
+      </p>
+    {{/box-widget}}
+
+  </div>
+
+  <div class="col-md-4">
+    <!-- Primary box -->
+    {{#box-widget
+      title = "Primary Box (header tooltip)"
+      colorSceme= "primary"
+      buttons=true
+      closable = true
+    }}
+       Box class: <code>.box.box-primary</code>
+        <p>
+          amber, microbrewery abbey hydrometer, brewpub ale lauter tun saccharification oxidized barrel.
+          berliner weisse wort chiller adjunct hydrometer alcohol aau!
+          sour/acidic sour/acidic chocolate malt ipa ipa hydrometer.
+        </p>
+    {{/box-widget}}
+
+  </div>
+
+  <div class="col-md-4">
+    <!-- Info box -->
+    {{#box-widget
+      title = "Info Box"
+      colorSceme= "info"
+      buttons=false
+      closable = false
+      collapsable = true
+      label = "Some label!"
+    }}
+       Box class: <code>.box.box-info</code>
+        <p>
+          amber, microbrewery abbey hydrometer, brewpub ale lauter tun saccharification oxidized barrel.
+          berliner weisse wort chiller adjunct hydrometer alcohol aau!
+          sour/acidic sour/acidic chocolate malt ipa ipa hydrometer.
+        </p>
+    {{/box-widget}}
+  </div>
+</div><!-- /.row -->
+
+
+
+
+<div class="row">
+  <div class="col-md-4">
+    {{#box-widget
+      title = "Danger Box (Loading state)"
+      colorSceme= "danger"
+      buttons=true
+      closable = true
+      isLoading=true
+    }}
+       Box class: <code>.box.box-primary</code>
+        <p>
+          amber, microbrewery abbey hydrometer, brewpub ale lauter tun saccharification oxidized barrel.
+          berliner weisse wort chiller adjunct hydrometer alcohol aau!
+          sour/acidic sour/acidic chocolate malt ipa ipa hydrometer.
+        </p>
+    {{/box-widget}}
+  </div>
+
+  <div class="col-md-4">
+    <!-- Success box -->
+    <div class="box box-success">
+      <div class="box-header">
+        <h3 class="box-title">Success Box (toggle buttons)</h3>
+        <div class="box-tools pull-right">
+          <div class="btn-group" data-toggle="btn-toggle">
+            <button type="button" class="btn btn-success btn-xs active" data-toggle="on">Left</button>
+            <button type="button" class="btn btn-success btn-xs" data-toggle="off">Right</button>
+          </div>
+        </div>
+      </div>
+      <div class="box-body">
+        Box class: <code>.box.box-success</code>
+        <p>
+          amber, microbrewery abbey hydrometer, brewpub ale lauter tun saccharification oxidized barrel.
+          berliner weisse wort chiller adjunct hydrometer alcohol aau!
+          sour/acidic sour/acidic chocolate malt ipa ipa hydrometer.
+        </p>
+      </div><!-- /.box-body -->
+    </div><!-- /.box -->
+  </div><!-- /.col -->
+
+  <div class="col-md-4">
+    <!-- Warning box -->
+    <div class="box box-warning">
+      <div class="box-header">
+        <h3 class="box-title">Warning Box</h3>
+        <div class="box-tools pull-right">
+          <ul class="pagination pagination-sm inline">
+            <li><a href="#">&laquo;</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">&raquo;</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="box-body">
+        Box class: <code>.box.box-warning</code>
+        <p>
+          amber, microbrewery abbey hydrometer, brewpub ale lauter tun saccharification oxidized barrel.
+          berliner weisse wort chiller adjunct hydrometer alcohol aau!
+          sour/acidic sour/acidic chocolate malt ipa ipa hydrometer.
+        </p>
+      </div><!-- /.box-body -->
+    </div><!-- /.box -->
+  </div><!-- /.col -->
+</div><!-- /.row -->

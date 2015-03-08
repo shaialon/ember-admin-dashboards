@@ -1,0 +1,15 @@
+<div {{bind-attr class=":info-box fullClass"}}>
+	<span {{bind-attr class=":info-box-icon bgClass"}}><i {{bind-attr class="iconClass"}}></i></span>
+	<div class="info-box-content">
+		{{#if title}}
+			<span class="info-box-text">{{title}}</span>
+		{{/if}}
+		{{#if metric}}
+			<span class="info-box-number">
+				{{metric}}
+				{{#if isPercentage}}<small>%</small>{{/if}}
+			</span>
+		{{/if}}
+		{{yield}}
+	</div>
+</div>

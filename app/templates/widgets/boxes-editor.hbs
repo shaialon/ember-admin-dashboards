@@ -1,0 +1,168 @@
+
+<!-- Small boxes (Stat box) -->
+<div class="row">
+  {{! The Demo Options}}
+  <div class="col-md-4">
+  	<h4 class="page-header">
+	  Create your customizable box!
+	  <small>Tired of writing endless html? Ember to the rescue with <code>Box Widget Component</code>!</small>
+	</h4>
+	<form role="form">
+	  <div class="box-body">
+	  	<div class="col-md-12">
+		    <div class="form-group">
+		      <label for="sceneTitle">Select title</label>
+		      {{input
+		        type="text"
+		        id="sceneTitle"
+		        class="form-control"
+		        placeholder="Enter a title for your box..."
+		        value=title
+		      }}
+		    </div>
+	    </div>
+	    <div class="col-md-6">
+		    <div class="form-group">
+		      <label >Style:</label>
+		      {{view 'select'
+		        content=styleOptions
+		        value = selectedStyle
+		      }}
+
+		    </div>
+		    {{#if isBackground}}
+			    <div class="form-group">
+			      <label >Background:</label>
+			      {{view 'select'
+			        content=backGroundOptions
+			        value = selectedBackground
+			      }}
+			    </div>
+			{{else}}
+				<div class="form-group">
+			      <label >Scheme:</label>
+			      {{view 'select'
+			        content=colorScemeOptions
+			        value = selectedColorSceme
+			      }}
+			    </div>
+			{{/if}}
+
+			<div class="col-md-12">
+			    <div class="form-group">
+			      <label for="labelText">Add label</label>
+			      {{input
+			        type="text"
+			        id="labelText"
+			        class="form-control"
+			        placeholder="Enter a label"
+			        value=labelText
+			      }}
+			    </div>
+		    </div>
+		</div>
+	    <div class="col-md-6">
+		    <div class="form-group">
+		      {{input
+		        type="checkbox"
+		        id="isClosable"
+		        checked=isClosable
+		      }}
+		      <label for="isClosable">Is closable</label>
+		    </div>
+
+
+
+		    <div class="form-group">
+		      {{input
+		        type="checkbox"
+		        id="isCollapsable"
+		        checked=isCollapsable
+		      }}
+		      <label for="isCollapsable">Is collapsable</label>
+		    </div>
+
+
+
+		    <div class="form-group">
+		      {{input
+		        type="checkbox"
+		        id="isLoading"
+		        checked=isLoading
+		      }}
+		      <label for="isLoading">Is loading</label>
+		    </div>
+
+
+
+		    <div class="form-group">
+		      {{input
+		        type="checkbox"
+		        id="buttonsOn"
+		        checked=buttonsOn
+		      }}
+		      <label for="buttonsOn">Buttons</label>
+		    </div>
+		</div>
+
+	  </div>
+	</form>
+  </div>
+
+  {{!TODO:move this!;}}
+  <style>
+  .box-solid > .box-footer{
+  	border-top: none;
+  	background: none;
+  }
+  </style>
+
+
+  {{! The Demo Widget}}
+  <div class="col-md-4">
+  	<h4 class="page-header">
+	  The result box:
+	</h4>
+	{{#box-widget
+      title = title
+      footer= "widgets/dynamic-box-footer"
+      closable = isClosable
+      collapsable = isCollapsable
+      isLoading = isLoading
+      buttons = buttonsOn
+      solid = isSolid
+      background = backgroundParam
+      colorSceme = colorScemeParam
+      label = labelText
+    }}
+       This can be any piece of code snippet you want...<br/>
+		From <i>plain html</i> to {{emberBindingExample}}<br/>
+		Even nested components or templates!
+    {{/box-widget}}
+  </div>
+
+  {{! The Demo code}}
+  <div class="col-md-4">
+  	<h4 class="page-header">
+  	  {{!TODO: syntax highlighting}}
+	  The code that creates it:
+	  <pre>
+<code>&lbrace;&lbrace;#box-widget</code>
+	title       = "{{title}}"
+	closable    = {{isClosable}}
+	collapsable = {{isCollapsable}}
+	isLoading   = {{isLoading}}
+	buttons     = {{buttonsOn}}
+	label       = "{{labelText}}"
+	{{#if isBackground}}background  = "{{backgroundParam}}"{{else}}colorSceme  = "{{colorScemeParam}}"
+	{{#if isSolid}}solid       = {{isSolid}}{{/if}}{{/if}}
+&rbrace;&rbrace;
+	This can be any piece of code snippet you want...&lt;br/&gt;
+	From &lt;i&gt;plain html&lt;/i&gt; to &lbrace;&lbrace;emberBindingExample&rbrace;&rbrace;&lt;br/&gt;
+	Even nested components or templates!
+<code>&lbrace;&lbrace;/box-widget&rbrace;&rbrace;</code>
+	  </pre>
+	</h4>
+  </div>
+</div>
+
