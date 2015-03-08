@@ -8,7 +8,7 @@ export default Ember.Controller.extend({
 	},
 
 	connectToFeed: function(){
-		var socket = window.io.connect('http://localhost:3000/');
+		var socket = window.io.connect('https://twitter-stream-embe.herokuapp.com/');
 		var count = 0;
 		var now, start = new Date();
 		var tps = 0;
