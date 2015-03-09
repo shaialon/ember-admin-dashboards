@@ -6,10 +6,10 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('index');
+  this.route('index' , {path:'/'});
   this.route('widgets');
-  this.route('editor', {path:'/'});
   this.route('twitter');
+  this.route('general-ui');
 });
 
 export default Router;

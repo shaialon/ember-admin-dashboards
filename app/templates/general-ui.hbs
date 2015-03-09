@@ -1,0 +1,55 @@
+{{! This file is a modification of html from https://github.com/almasaeed2010/AdminLTE}}
+<!-- Content Header (Page header) -->
+<section class="content-header">
+  <h1>
+    General UI
+    <small>Preview of UI elements</small>
+  </h1>
+  <ol class="breadcrumb">
+    <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+    <li class="active">Blank page</li>
+  </ol>
+</section>
+
+
+<!-- Main content -->
+<section class="content">
+
+	{{#box-widget
+		title = '<i class="fa fa-tag"></i> Color Palette'
+	}}
+		{{partial "uigeneral/color-palette"}}
+	{{/box-widget}}
+
+	<h2 class="page-header">Alerts and Callouts</h2>
+	<div class="row">
+        <div class="col-md-6">
+			{{#box-widget
+				title = '<i class="fa fa-warning"></i> Alerts'
+			}}
+				{{partial "uigeneral/alerts"}}
+			{{/box-widget}}
+		</div>
+		<div class="col-md-6">
+			{{#box-widget
+				title = '<i class="fa fa-bullhorn"></i> Callouts'
+			}}
+				{{partial "uigeneral/callouts"}}
+			{{/box-widget}}
+		</div>
+	</div>
+
+	<h2 class="page-header">AdminLTE Custom Tabs</h2>
+	<div class="row">
+		{{partial "uigeneral/customtabs"}}
+	</div>
+</section>
+
+
+
+
+
+
+
+
+{{!outlet}}

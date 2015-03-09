@@ -763,7 +763,7 @@ export default Ember.Controller.extend({
 		setInterval(function() {
 			that.set('tweetCount',count);
 
-		}, 10);
+		}, 5);
 
 		setInterval(function() {
 			// now = new Date();
@@ -798,7 +798,7 @@ export default Ember.Controller.extend({
 					languagesMap[prop] = tmpLang;
 				}
 			}
-		}, 200);
+		}, 100);
 
 		// Subscribe to `connect` events on the socket.
 		socket.on('connect', function() {

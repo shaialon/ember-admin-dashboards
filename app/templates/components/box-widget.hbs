@@ -1,5 +1,5 @@
 <div {{bind-attr class=":box-header background::with-border"}} {{action 'toggleCollapse'}}>
-  <h3 class="box-title">{{#if title}}{{title}}{{/if}} </h3>
+  <h3 class="box-title">{{#if title}}{{{title}}}{{/if}} </h3>
   <div class="box-tools pull-right">
   	{{#if label}}
   		<span {{bind-attr class=":label labelClass"}}>
