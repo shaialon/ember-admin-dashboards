@@ -1,0 +1,12 @@
+// TODO: This is a hack... need a better way to override original template may be needed.
+.skin-blue{
+	.treeview-menu>li>a.active{
+	  color: #FFF;
+	}
+	.sidebar-menu>li>a.active {
+	  color: #FFF;
+	  background: #1E282C;
+	  border-left-color: #3C8DBC;
+	}
+}
+
