@@ -99,9 +99,11 @@
 					    </thead>
 					    <tbody>
 					    	{{#each lang in languagesArr.arrangedContent}}
-								<td>{{spark-line class="pad" data=lang.trend}}</td>
-								<td>{{lang.displayName}}</td>
-								<td>{{lang.count}}</td>
+					    		<tr>
+									<td>{{spark-line class="pad" data=lang.trend}}</td>
+									<td>{{lang.displayName}}</td>
+									<td>{{lang.count}}</td>
+								</tr>
 							{{/each}}
 					    </tbody>
 					  </table>
