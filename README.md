@@ -4,7 +4,7 @@ This project's goals:
 * Show a demo implementation of a realtime dashboard pulling data from the twitter stream api with socket.io
 * 1 click deploy to Heroku:
 
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+    [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
 ![tweet-dashboard](https://cloud.githubusercontent.com/assets/3126207/6563376/60659760-c6a9-11e4-9e5d-16e3fc11841b.gif)
 
