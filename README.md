@@ -2,7 +2,7 @@
 This project's goals:
 * "Emberize" the very awesome [AdminLTE template](https://github.com/almasaeed2010/AdminLTE) including Ember-Cli.
 * Show a demo implementation of a realtime dashboard pulling data from the twitter stream api with socket.io
-* 1 click deploy to Heroku:
+* 1 click deploy to Heroku (will work with github forks and clones as well):
 
     [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
