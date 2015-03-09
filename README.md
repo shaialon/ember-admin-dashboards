@@ -1,13 +1,13 @@
-# ember-dashboard
-An Ember-cli project - starter admin template...
-
+# ember-admin-dashboard
+This project has three goals:
+1. "Emberize" the very awesome [AdminLTE template](https://github.com/almasaeed2010/AdminLTE) including Ember-Cli.
+2. Show a demo implementation of a realtime dashboard pulling data from the twitter stream api with socket.io
+3. 1 click deploy to Heroku
 
 ![tweet-dashboard](https://cloud.githubusercontent.com/assets/3126207/6563376/60659760-c6a9-11e4-9e5d-16e3fc11841b.gif)
 
+I will expose this project first at my upcoming talk in [Reversim Summit 2015](http://summit2015.reversim.com/proposal/4eTos8T9QfgZhrLYP)
 
-
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
 
 ## Prerequisites
 
