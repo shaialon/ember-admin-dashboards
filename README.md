@@ -1,6 +1,11 @@
 # ember-dashboard
 An Ember-cli project - starter admin template...
 
+
+![tweet-dashboard](https://cloud.githubusercontent.com/assets/3126207/6563376/60659760-c6a9-11e4-9e5d-16e3fc11841b.gif)
+
+
+
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
 
