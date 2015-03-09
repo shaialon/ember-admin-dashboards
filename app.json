@@ -5,6 +5,6 @@
   "logo": "http://upload.wikimedia.org/wikipedia/en/6/69/Ember.js_Logo_and_Mascot.png",
   "keywords": ["Ember.js", "AdminLTE", "Admin template", "Twitter stream"],
   "env": {
-    "BUILDPACK_URL": "https://github.com/tonycoco/heroku-buildpack-ember-cli",
-  },
+    "BUILDPACK_URL": "https://github.com/tonycoco/heroku-buildpack-ember-cli"
+  }
 }
