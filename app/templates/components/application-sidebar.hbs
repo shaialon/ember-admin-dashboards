@@ -24,12 +24,6 @@
   <!-- sidebar menu: : style can be found in sidebar.less -->
   <ul class="sidebar-menu">
 	<li class="header">MAIN NAVIGATION</li>
-	<li>
-	  {{#link-to 'twitter'}}
-		<i class="fa fa-pencil"></i> <span>Twitter</span>
-		<small class="label pull-right bg-red">3</small>
-	  {{/link-to}}
-	</li>
 	<li class="active treeview">
 	  <a href="#">
 		<i class="fa fa-dashboard"></i> <span>Dashboard</span> <i class="fa fa-angle-left pull-right"></i>
@@ -37,6 +31,12 @@
 	  <ul class="treeview-menu">
 		<li><a href="index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
 		<li>{{#link-to 'index'}}<i class="fa fa-circle-o"></i> Dashboard v2{{/link-to}}</li>
+		<li>
+		  {{#link-to 'twitter'}}
+			<i class="fa fa-twitter"></i> <span>Twitter</span>
+			<small class="label pull-right bg-red">3</small>
+		  {{/link-to}}
+		</li>
 	  </ul>
 	</li>
 	<li class="treeview">
