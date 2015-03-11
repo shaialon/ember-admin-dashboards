@@ -94,13 +94,6 @@ app.import('vendor/AdminLTE/plugins/slimScroll/jquery.slimscroll.min.js');
 app.import('vendor/AdminLTE/plugins/fastclick/fastclick.min.js');
 
 
-//	BOWER
-app.import('bower_components/scooch/build/scooch.min.css');
-app.import('bower_components/scooch/build/scooch.min.js');
-
-
-
-
 //  Custom stuff:
 app.import('vendor/socket.io/socket.io.min.js');
 
