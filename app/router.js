@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('widgets');
   this.route('twitter' , {path:'/'});
   this.route('general-ui');
+  this.route('comingsoon');
 });
 
 export default Router;
