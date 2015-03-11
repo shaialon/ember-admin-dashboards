@@ -12,78 +12,46 @@
 
 <!-- Main content -->
 <section class="content">
-<div class="row">
-	<div class="col-md-3">
-		{{!-- <div class="col-xs-6 col-md-12">
-			{{#info-box
-			  title   = "Total tweets"
-			  metric  = tweetCount
-			  color   = "aqua"
-			  ion   	= "social-twitter-outline"
-			  full=true
-			  responsive = false
-			}}
-			  <div class="progress">
-			    <div class="progress-bar" {{bind-attr style="tweetsPerSecondScaleStyle"}}></div>
-			  </div>
-			  <span class="progress-description">
-
-			    Real tweets from &nbsp;&nbsp;<a href="https://dev.twitter.com/streaming/reference/get/statuses/sample" target="_blank"><code style="text-transform: none;">GET statuses/sample</code></a>
-			  </span>
-			{{/info-box}}
-		</div> --}}
-		{{!-- {{tweetsPerSecond}} &nbsp;avg. tweets per second --}}
-		<div class="col-xs-6 col-md-12">
-			{{!info-box
-			  title   = "Flagged tweets"
-			  metric  = flaggedTweets
-			  color   = "red"
-			  ion   	= "flag"
-			  full=true
-			  responsive = false
-			}}
+	<div class="row">
+		<div class="col-xs-12 col-sm-6 col-md-4">
 			{{#unless flaggedDrilled}}
 
-			<div class="small-box bg-aqua">
-		      <div class="inner">
-		        <h3>
-		          {{tweetCount}}
-		        </h3>
-		        <p>
-		          Total tweets
-		        </p>
-		      </div>
-		      <div class="icon">
-		        <i class="ion ion-social-twitter-outline"></i>
-		      </div>
-		      <a href="https://dev.twitter.com/streaming/reference/get/statuses/sample" target="_blank" class="small-box-footer">
-		        Real tweets from Streaming api
-		      </a>
-		    </div>
-
+				<div class="small-box bg-aqua">
+			      <div class="inner">
+			        <h3>
+			          {{tweetCount}}
+			        </h3>
+			        <p>
+			          Total tweets
+			        </p>
+			      </div>
+			      <div class="icon">
+			        <i class="ion ion-social-twitter-outline"></i>
+			      </div>
+			      <a href="https://dev.twitter.com/streaming/reference/get/statuses/sample" target="_blank" class="small-box-footer">
+			        Real tweets from Streaming api
+			      </a>
+			    </div>
 		    {{/unless}}
 
-
-			<div class="small-box bg-red">
-		      <div class="inner">
-		        <h3>
-		          {{flaggedTweets}}
-		        </h3>
-		        <p>
-		          Flagged tweets
-		        </p>
-		      </div>
-		      <div class="icon">
-		        <i class="ion ion-flag"></i>
-		      </div>
-		      <a {{action 'drilldownFlagged'}} class="small-box-footer">
-		        <i class="fa fa-filter"></i> Filter for flagged tweets
-		      </a>
+		    <div class="small-box bg-red">
+			      <div class="inner">
+			        <h3>
+			          {{flaggedTweets}}
+			        </h3>
+			        <p>
+			          Flagged tweets
+			        </p>
+			      </div>
+			      <div class="icon">
+			        <i class="ion ion-flag"></i>
+			      </div>
+			      <a {{action 'drilldownFlagged'}} class="small-box-footer">
+			        <i class="fa fa-filter"></i> Filter for flagged tweets
+			      </a>
 		    </div>
-		</div>
 
-		<div class="col-md-12">
-			{{#box-widget
+		    {{#box-widget
 		        title = "Top Languages"
 		        label = languagesArr.length
 		        colorSceme = "info"
@@ -109,10 +77,10 @@
 					  </table>
 				</div>
 		    {{/box-widget}}
+
 		</div>
-	</div>
-	<div class="col-md-9">
-		<div class="col-md-12">
+
+		<div class="col-xs-12 col-sm-6 col-md-8">
 			{{#box-widget
 		        title = "Geo-tweets!"
 		        colorSceme = "info"
@@ -120,8 +88,5 @@
 		    	{{tweet-map register-as=fullscreenMap}}
 		    {{/box-widget}}
 		</div>
-
 	</div>
-
-</div>
 </section>
