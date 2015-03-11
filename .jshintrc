@@ -5,7 +5,10 @@
     "-Promise",
     "$",
     "moment",
-    "FastClick"
+    "FastClick",
+    "Em",
+    "google",
+    "twttr"
   ],
   "browser": true,
   "boss": true,

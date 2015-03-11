@@ -37,7 +37,7 @@ export default Ember.Component.extend({
 
 	        // Position the map.
 	        var centerPosition = new google.maps.LatLng(latitude, longitude);
-	        var centerMarker = new google.maps.Marker({
+	        new google.maps.Marker({
 	          map: map,
 	          position: centerPosition,
 	          icon: {
@@ -49,19 +49,19 @@ export default Ember.Component.extend({
 	        map.setCenter(centerPosition);
 
 	        // Determine the bounds of the map when it is ready.
-	        google.maps.event.addListener(that.get('map'), 'idle', function() {
-	          // Bounds of the map.
-	          var bounds = map.getBounds();
+	        // google.maps.event.addListener(that.get('map'), 'idle', function() {
+	        //   // Bounds of the map.
+	        //   var bounds = map.getBounds();
 
-	          // String representing the bounding box (SW coordinates, NE coordinates).
-	          var locations = bounds.getSouthWest().lng() + ',' +
-	                          bounds.getSouthWest().lat() + ',' +
-	                          bounds.getNorthEast().lng() + ',' +
-	                          bounds.getNorthEast().lat();
+	        //   // String representing the bounding box (SW coordinates, NE coordinates).
+	        //   var locations = bounds.getSouthWest().lng() + ',' +
+	        //                   bounds.getSouthWest().lat() + ',' +
+	        //                   bounds.getNorthEast().lng() + ',' +
+	        //                   bounds.getNorthEast().lat();
 
-	          // Emit the `stream` event with the locations on the socket.
-	          // socket.emit('stream', { locations: locations });
-	        });
+	        //   // Emit the `stream` event with the locations on the socket.
+	        //   // socket.emit('stream', { locations: locations });
+	        // });
 	      }
 
 	      // Callback function when the geolocation is not supported.
