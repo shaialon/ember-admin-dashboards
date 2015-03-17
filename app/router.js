@@ -12,6 +12,7 @@ Router.map(function() {
   this.route('general-ui');
   this.route('comingsoon');
   this.route('ui-icons');
+  this.route('ui-buttons');
 });
 
 export default Router;
