@@ -13,6 +13,7 @@ Router.map(function() {
   this.route('comingsoon');
   this.route('ui-icons');
   this.route('ui-buttons');
+  this.route('ui-timeline');
 });
 
 export default Router;
