@@ -11,6 +11,7 @@ Router.map(function() {
   this.route('twitter' , {path:'/'});
   this.route('general-ui');
   this.route('comingsoon');
+  this.route('ui-icons');
 });
 
 export default Router;
