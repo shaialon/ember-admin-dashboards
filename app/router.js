@@ -14,6 +14,7 @@ Router.map(function() {
   this.route('ui-icons');
   this.route('ui-buttons');
   this.route('ui-timeline');
+  this.route('ui-modals');
 });
 
 export default Router;
