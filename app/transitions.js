@@ -5,6 +5,12 @@ export default function(){
 	);
 
 	this.transition(
+		this.toRoute('widgets'),
+		this.use('toLeft'),
+		this.reverse('toRight')
+	);
+
+	this.transition(
 		this.use('crossFade')
 	);
 }
