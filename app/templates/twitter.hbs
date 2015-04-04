@@ -14,25 +14,27 @@
 <section class="content">
 	<div class="row">
 		<div class="col-xs-12 col-sm-6 col-md-4">
-			{{#unless flaggedDrilled}}
+			{{#liquid-spacer}}
+				{{#unless flaggedDrilled}}
 
-				<div class="small-box bg-aqua">
-			      <div class="inner">
-			        <h3>
-			          {{tweetCount}}
-			        </h3>
-			        <p>
-			          Total tweets
-			        </p>
-			      </div>
-			      <div class="icon">
-			        <i class="ion ion-social-twitter-outline"></i>
-			      </div>
-			      <a href="https://dev.twitter.com/streaming/reference/get/statuses/sample" target="_blank" class="small-box-footer">
-			        Real tweets from Streaming api
-			      </a>
-			    </div>
-		    {{/unless}}
+					<div class="small-box bg-aqua">
+				      <div class="inner">
+				        <h3>
+				          {{tweetCount}}
+				        </h3>
+				        <p>
+				          Total tweets
+				        </p>
+				      </div>
+				      <div class="icon">
+				        <i class="ion ion-social-twitter-outline"></i>
+				      </div>
+				      <a href="https://dev.twitter.com/streaming/reference/get/statuses/sample" target="_blank" class="small-box-footer">
+				        Real tweets from Streaming api
+				      </a>
+				    </div>
+			    {{/unless}}
+		    {{/liquid-spacer}}
 
 		    <div class="small-box bg-red">
 			      <div class="inner">
