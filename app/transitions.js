@@ -1,6 +1,6 @@
 export default function(){
 	this.transition(
-	  this.toRoute('index'),
-	  this.use('toLeft')
+		this.hasClass('drilldown'),
+		this.use('crossFade')
 	);
 }
