@@ -682,7 +682,7 @@ export default Ember.Controller.extend({
 
 	actions: {
 		drilldownFlagged: function(){
-			this.set('flaggedDrilled',true);
+			this.toggleProperty('flaggedDrilled');
 		},
 	}
 
