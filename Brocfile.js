@@ -91,7 +91,7 @@ app.import('vendor/AdminLTE/plugins/iCheck/icheck.min.js');
 app.import('vendor/AdminLTE/plugins/slimScroll/jquery.slimscroll.min.js');
 
 //  FastClick
-app.import('vendor/AdminLTE/plugins/fastclick/fastclick.min.js');
+// app.import('vendor/AdminLTE/plugins/fastclick/fastclick.min.js');
 
 
 //  Custom stuff:
