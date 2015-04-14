@@ -6,7 +6,7 @@ export default function(){
 
 	this.transition(
 		this.toRoute('widgets'),
-		this.use('toLeft'),
+		this.use('toLeft' ,{ duration: 300 }),
 		this.reverse('toRight')
 	);
 
