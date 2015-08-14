@@ -1,16 +1,16 @@
-<div {{bind-attr class=":box-header background::with-border"}} {{action 'toggleCollapse'}}>
+<div class="box-header {{if background '' 'with-border'}}" {{action 'toggleCollapse'}}>
   <h3 class="box-title">{{#if title}}{{{title}}}{{/if}} </h3>
   <div class="box-tools pull-right">
   	{{#if label}}
-  		<span {{bind-attr class=":label labelClass"}}>
+  		<span class="label {{labelClass}}">
   			{{label}}
   		</span>
   	{{/if}}
   	{{#if collapsable}}
-		<button {{bind-attr class=":btn buttonClass"}} {{action 'toggleCollapse' bubbles=false}}><i {{bind-attr class=":fa isCollapsed:fa-plus:fa-minus"}}></i></button>
+		<button class="btn {{buttonClass}}" {{action 'toggleCollapse' bubbles=false}}><i class="fa {{if isCollapsed 'fa-plus' 'fa-minus'}}"></i></button>
 	{{/if}}
 	{{#if closable}}
-		<button {{bind-attr class=":btn buttonClass"}} {{action 'close' bubbles=false}}><i class="fa fa-times"></i></button>
+		<button class="btn {{buttonClass}}" {{action 'close' bubbles=false}}><i class="fa fa-times"></i></button>
 	{{/if}}
 	{{!TODO: hook for extra buttons...}}
 	{{!-- <div class="btn-group">
@@ -25,11 +25,11 @@
 	</div> --}}
   </div>
 </div>
-<div {{bind-attr class=":box-body bodyClass"}}>
+<div class="box-body {{bodyClass}}">
   {{yield}}
 </div>
 {{#if footer}}
-	<div {{bind-attr class=":box-footer footerClass"}}>
+	<div class="box-footer {{footerClass}}">
 	  	{{partial footer}}
 	</div>
 {{/if}}
