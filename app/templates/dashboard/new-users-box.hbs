@@ -11,7 +11,7 @@
     <ul class="users-list clearfix">
       {{#each newMembersArr as |member|}}
         <li>
-          <img {{bind-attr src="member.imgUrl"}} alt="User Image"/>
+          <img class="{{member.imgUrl}}" alt="User Image"/>
           <a class="users-list-name" href="#">{{member.name}}</a>
           <span class="users-list-date">{{member.signUpDate}}</span>
         </li>
