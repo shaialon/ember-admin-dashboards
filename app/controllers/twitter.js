@@ -663,11 +663,15 @@ export default Ember.Controller.extend({
 		var that = this;
 		that.set('tweetCount',0);
 		that.set('flaggedTweets',0);
-		var languagesArr = Ember.ArrayController.create({
-			sortProperties: ['count'],
-  			sortAscending: false
-		});
-		languagesArr.set('sortProperty','count');
+                var languagesArr = Ember.Controller.extend({
+                  sortProps: ['count:desc'],
+                  arrangedContent: Ember.computed.sort('content','sortProps'),
+                  pushObject(obj) {
+                    this.get('content').pushObject(obj);
+                  }
+                }).create({
+                  content: Ember.A([]),
+                });
 		that.set('languagesArr',languagesArr);
 		that.set('languagesMap',{});
 	},
