@@ -139,5 +139,5 @@ export default Ember.Component.extend({
 
 	_register: function() {
 	    this.set('register-as', this); // register-as is a new property
-	}.on('init'),
+	}.on('didRender'),
 });

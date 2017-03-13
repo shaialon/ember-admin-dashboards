@@ -1,0 +1,7 @@
+.skin-blue .treeview-menu > li > a.active {
+  color: #FFF; }
+
+.skin-blue .sidebar-menu > li > a.active {
+  color: #FFF;
+  background: #1E282C;
+  border-left-color: #3C8DBC; }
