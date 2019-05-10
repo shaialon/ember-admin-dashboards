@@ -1,3 +1,10 @@
+# Deprecation Notice
+### This project is no longer maintained.
+It was a lot of fun building this for [Reversim Summit 2015](https://www.youtube.com/watch?v=lNk-Kz_WqdY)
+I've moved on to other technologies... About a dozen people wrote to me over the years thanking for this project, I hoped it helped you too somehow :)
+
+[![image](https://user-images.githubusercontent.com/3126207/57517686-1598e480-7320-11e9-904d-8f94fd9f6e74.png)](https://www.youtube.com/watch?v=lNk-Kz_WqdY)
+
 # ember-admin-dashboard
 This project's goals:
 * "Emberize" the very awesome [AdminLTE template](https://github.com/almasaeed2010/AdminLTE) including Ember-Cli.
